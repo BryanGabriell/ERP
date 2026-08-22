@@ -124,6 +124,16 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-maven-plugin</artifactId>
+            <version>13.3.0</version>
+            <configuration>
+                <url>jdbc:mysql://localhost/mydb</url>
+                <user>myUser</user>
+                <password>mySecretPwd</password>
+            </configuration>
+        </plugin>
+			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<executions>
